@@ -60,8 +60,8 @@ var un = document.myform.username.value;
 var pw = document.myform.pword.value;
 var valid = false;
 
-var unArray = ["RITESH", "SHAH", "BABU"];  // as many as you like - no comma after final entry
-var pwArray = ["12345", "*****", "00000"];  // the corresponding passwords;
+var unArray = ["7587101107", "7587344337", "BABU"];  // as many as you like - no comma after final entry
+var pwArray = ["7587101107", "7587344337", "00000"];  // the corresponding passwords;
 
 for (var i=0; i <unArray.length; i++) {
 if ((un == unArray[i]) && (pw == pwArray[i])) {
@@ -80,7 +80,7 @@ var t = " tries";
 if (count == 1) {t = " try"}
 
 if (count >= 1) {
-alert ("Invalid username and/or password.  You have " + count + t + " left.");
+alert ("यहां मोबाइल नंबर स्वीकृत नहीं है (हो सकता है कि आपका Request अभी तक स्वीकार न किया गया हो) (यदि आपने अभी-अभी अपना खाता बनाया है, तो 24 घंटे प्रतीक्षा करें और फिर से प्रयास करें) You have " + count + t + " left.");
 document.myform.username.value = "";
 document.myform.pword.value = "";
 setTimeout("document.myform.username.focus()", 25);
@@ -129,7 +129,7 @@ return false;
                     <div class="row">
                          <div class="col-12">
                             <h2>LOGIN</h2>
-                            <p class="text-max-800">इसमें अपना मोबाइल नंबर डालें ( कॉपीराइट से बचने के लिए लॉगिन ऑप्शन बनाया गया है )</p>
+                            <p class="text-max-800">कॉपीराइट से बचने के लिए लॉगिन ऑप्शन बनाया गया है<br>इसमें अपना मोबाइल नंबर डालें</p>
                         </div>
 
                         <div class="col-lg-12">
@@ -145,7 +145,7 @@ return false;
             -->
 
             <form name = "myform" >
-<p ><input type="text" placeholder="mobile number" class="form-control" name="username" id="username"><br><input placeholder="confirm mobile number" class="form-control" type="password" name="pword" id="password">
+<p ><input type="text" placeholder="मोबाइल नंबर डालें" class="form-control" name="username" id="username"><br><input placeholder="दोबारा मोबाइल नंबर डालें" class="form-control" type="password" name="pword" id="password">
 
 <p class="form-row d-flex flex-wrap justify-content-between">
                                                 <label class="woocommerce-form__label d-flex woocommerce-form__label-for-checkbox inline">
@@ -161,8 +161,10 @@ return false;
                                                 
 </form>
 
-                                    
-<div class="text-center">यदि आपने अभी तक खाता नहीं बनाया है, तो आप लॉगिन नहीं कर पाएंगे <br> पहले खाता बनाएँ फिर लॉगिन करें  <br><a href="prime-sing-up.html"> खाता बनाने के लिए यंहा क्लिक करें </a></div>
+ <br><br>                                   
+<div class="text-center">यदि आपने अभी तक खाता नहीं बनाया है, तो आप लॉगिन नहीं कर पाएंगे, पहले खाता बनाएँ फिर लॉगिन करें  <br><a href="sing-up.html"><br><center><button class="btn btn-outline-danger" type="button" >
+CREATE ACCOUNT</button> </center></a></div>
+
 
 
 
