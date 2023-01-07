@@ -60,8 +60,10 @@ var un = document.myform.username.value;
 var pw = document.myform.pword.value;
 var valid = false;
 
-var unArray = ["7587101107", "7587344337", "BABU"];  // as many as you like - no comma after final entry
-var pwArray = ["7587101107", "7587344337", "00000"];  // the corresponding passwords;
+var unArray = ["7587101107","RITESH","SHAH"]; 
+
+var pwArray = ["7587344337","RITESH","SHAH"];  
+
 
 for (var i=0; i <unArray.length; i++) {
 if ((un == unArray[i]) && (pw == pwArray[i])) {
@@ -72,7 +74,7 @@ break;
 
 if (valid) {
 
-window.location = "index.html";
+window.location = "https://ritesh2803.github.io/Movies/index.html";
 return false;
 }
 
@@ -115,8 +117,7 @@ return false;
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Favicon -->
-    <link href="Photos/lOGO.png" rel="shortcut icon" type="image/x-icon">
-    <link href="Photos/lOGO.png" rel="icon" type="image/x-icon">
+   
 
 </head>
 
@@ -130,7 +131,7 @@ return false;
                     <div class="row">
                          <div class="col-12">
                             <h2>LOGIN</h2>
-                            <p class="text-max-800">कॉपीराइट से बचने के लिए लॉगिन ऑप्शन बनाया गया है<br>इसमें अपना मोबाइल नंबर डालें</p>
+                            <p class="text-max-800">इसमें अपना मोबाइल नंबर डालें</p>
                         </div>
 
                         <div class="col-lg-12">
@@ -146,7 +147,7 @@ return false;
             -->
 
             <form name = "myform" >
-<p ><input type="text" placeholder="मोबाइल नंबर डालें" class="form-control" name="username" id="username"><br><input placeholder="दोबारा मोबाइल नंबर डालें" class="form-control" type="password" name="pword" id="password">
+<p ><input type="number" placeholder="मोबाइल नंबर डालें" class="form-control" name="username" id="username" required="required"><br><input placeholder="दोबारा मोबाइल नंबर डालें" class="form-control" type="number" name="pword" id="password" required="required">
 
 <p class="form-row d-flex flex-wrap justify-content-between">
                                                 <label class="woocommerce-form__label d-flex woocommerce-form__label-for-checkbox inline">
@@ -163,7 +164,7 @@ return false;
 </form>
 
  <br><br>                                   
-<div class="text-center">यदि आपने अभी तक खाता नहीं बनाया है, तो आप लॉगिन नहीं कर पाएंगे, पहले खाता बनाएँ फिर लॉगिन करें  <br><a href="sing-up.html"><br><center><button class="btn btn-outline-danger" type="button" >
+<div class="text-center">यदि आपने अभी तक खाता नहीं बनाया है, तो आप लॉगिन नहीं कर पाएंगे, पहले खाता बनाएँ फिर लॉगिन करें  <br><a href="create-account.html"><br><center><button class="btn btn-outline-danger" type="button" >
 CREATE ACCOUNT</button> </center></a></div>
 
 
